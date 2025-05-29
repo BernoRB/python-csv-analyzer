@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1] - 2025-05-29
+### Añadido
+- Se implementa la funcionalidad completa del POST /files, que permite:
+  - Leer csv de transacciones (con unas columnas determinadas)
+  - Procesar, con dos opciones a elegir por parametro: transacciones sospechosas (por monto unico y por usuarios en blacklist) y agrupar txs por usuario
+  - Crea y devuelve un nuevo csv con el analisis solicitado
+
 ## [1.2.0] - 2025-05-26
 ### Cambios
 - Se cambia el enfoque: el archivo no será almacenado, ni el que ingresa ni el que sale, para simplificar el flujo.
