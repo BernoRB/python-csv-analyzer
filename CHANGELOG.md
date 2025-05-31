@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.2.2] - 2025-05-31
+### Añadido
+- Se implementa un sencillo front-end en Vue.js
+
 ## [1.2.1] - 2025-05-29
 ### Añadido
 - Se implementa la funcionalidad completa del POST /files, que permite:

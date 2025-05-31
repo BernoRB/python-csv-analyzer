@@ -1,10 +1,10 @@
 from fastapi import FastAPI, File, Form, UploadFile, HTTPException
-
+from fastapi.staticfiles import StaticFiles
 from services.transaction_service import TransactionService
 
 app = FastAPI(
   title="CSV Transactions Analyzer",
-  version="1.2.1"
+  version="1.2.2"
 )
 
 
@@ -29,3 +29,5 @@ def healt_check():
   return {
     "status": "healthy!"
   }
+
+app.mount("/", StaticFiles(directory="frontend", html=True), name="frontend")
