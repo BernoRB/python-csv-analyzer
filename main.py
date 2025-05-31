@@ -4,7 +4,7 @@ from services.transaction_service import TransactionService
 
 app = FastAPI(
   title="CSV Transactions Analyzer",
-  version="1.2.2"
+  version="1.2.3"
 )
 
 

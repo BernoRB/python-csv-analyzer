@@ -64,7 +64,7 @@ class TransactionService:
     csv_lines = []
 
     # Add headers, putting a comma between each
-    csv_lines.append(','.join(headers)) # Nota personal Python: append agrega al final, normal. El ','.join(x) es 'unime todo lo de X usando , como separador'... en Node seria headers.join(',')
+    csv_lines.append(';'.join(headers)) # Nota personal Python: append agrega al final, normal. El ','.join(x) es 'unime todo lo de X usando , como separador'... en Node seria headers.join(',')
 
     # Add values to the csv lines from data dict
     for row in data:
@@ -74,7 +74,7 @@ class TransactionService:
           line_values.append(str(row[header]))
         else:
           line_values.append('')
-      csv_lines.append(','.join(line_values))
+      csv_lines.append(';'.join(line_values))
         
     # Add new line after each line
     csv_content = '\n'.join(csv_lines)

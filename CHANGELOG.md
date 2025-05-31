@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.2.3] - 2025-05-31
+### Cambios
+- Se cambia el ',' delimitador por ';' que es más habitual.
+- Se añaden imágenes al readme.
+
+
 ## [1.2.2] - 2025-05-31
 ### Añadido
 - Se implementa un sencillo front-end en Vue.js
